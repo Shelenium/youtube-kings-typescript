@@ -1,0 +1,368 @@
+body {
+  background: #75887b;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/line.png');
+}
+
+.main-div {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer; 
+  z-index: 50;
+}
+
+form {
+  margin-top: -42px;
+}
+
+h1 {
+  font: bold 7vw/9vw 'Exo', sans-serif;
+  color: #45644f;
+  background: #001e09;
+  padding: 8px 0 30px 0;
+  margin: 0 auto;
+  border-bottom: solid 1px white;
+  letter-spacing: 1px;
+  color-opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  min-height: 30px;
+
+}
+
+h1::first-letter {
+  color: #00e645;
+}
+
+input:active,
+input:hover,
+input:focus,
+input {
+  min-height: 30px;
+  border-radius: 5px;
+  padding: 5px 12px 5px 40px;
+  margin: 20px 0 12px 0;
+  font: normal 3.5vw/4vw 'Source Sans Pro', sans-serif;
+  color: #001e09;
+  width: 32%;
+  background-color: white;
+  background-image: url('../images/loop.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border: solid 1px white;
+  outline: none;
+}
+
+#stringSearch {
+  font: normal 4vw/4.5vw 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+.containerDiv {
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer; 
+}
+
+.boxDiv {
+  width: 320px;
+  min-height: 400px;
+  margin: 15px;
+  border-radius: 5px;
+  background: #001e09;
+  display: none;
+  vertical-align: top;
+  
+}
+
+.active {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+  animation: active_move 0.8s ease;
+}
+
+@keyframes active_move {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+.noDisplay {
+  display: none;
+}
+
+.boxImage {
+  width: 320px;
+  height: 180px;
+}
+
+h2 > a {
+  font: bold 5vw/6vw 'Source Sans Pro', sans-serif;
+  color: #00e645;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  cursor: pointer; 
+}
+
+h2 {
+  margin: 15px 0 10px 0;
+  padding: 0 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul.paging {
+  margin: 5px 0;
+  padding: 0;
+}
+
+ul.paging li {
+  display: inline-block;
+  font: normal 10px/24px 'Source Sans Pro', sans-serif;
+  background-color: #45644f;
+  margin: 0 20px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  width: 24px;
+  height: 24px;
+  vertical-align: top;
+}
+
+ul.paging li:hover {
+  background-color: #001e09;
+  color: #00e645;
+  -webkit-transition: all 0.5s ease;
+}
+
+ul.paging li:nth-child(2) {
+  color: #00e645;
+  background-color: #001e09;
+}
+
+ul.paging li.disabled,
+ul.paging li.disabled:hover {
+  background-color: #45644f;
+  color: #75887b;
+  -webkit-transition: all 0.5s ease;
+}
+
+h3 {
+  font: normal 4vw/4.5vw 'Source Sans Pro', sans-serif;
+  color: #00e645;
+  margin: 10px;
+  opacity: 0.7;
+}
+
+#mainDiv h4 {
+  font: normal 20px/24px 'Source Sans Pro', sans-serif;
+  margin: 50px auto;
+  color: #75887b;
+  background-color: #001e09;
+  background-image: url('../images/line.png');
+  width: 60%;
+  max-width: 600px;
+  padding: 20px 10px 20px 10px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  border: 1px solid white;
+  outline: 20px solid #001e09;
+  opacity: 1;
+  cursor: pointer;
+  position: relative;;
+  animation: move 1.2s ease;
+}
+
+h5 {
+  font: normal 12px/14px 'Source Sans Pro', sans-serif;
+  margin: 8px 0;
+  color: #1a3f26;
+}
+
+h6 {
+  font: bold 12px/24px 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+h6:hover {
+  color: #00e645;
+  background-color: #001e09;
+  border-radius: 12px;
+  -webkit-transition: all 0.5s ease;
+}
+
+.boxDescr {
+  font: normal 3.5vw/4.5vw 'Source Sans Pro', sans-serif;
+  color: #75887B;
+  margin: 10px;
+}
+
+.boxData {
+  font: normal 3vw/4vw 'Source Sans Pro', sans-serif;
+  color: #75887B;
+  margin: 10px;
+}
+
+ul.boxStat {
+  margin: 0;
+  padding: 0;
+}
+
+ul.boxStat li {
+  display: inline-block;
+  font: normal 3vw/4vw 'Source Sans Pro', sans-serif;
+  color: #75887B;
+  margin: 2px 20px;
+}
+
+input:hover,
+input:focus {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  font: normal 3.5vw/4vw 'Source Sans Pro', sans-serif;
+  border: solid 1px #00e645;
+}
+
+.main-div:hover h1 {
+  border-bottom: solid 1px #00e645;
+}
+
+.main-div:hover input {
+  border: solid 1px #00e645;
+}
+
+input:focus {
+  width: 60%;
+  max-width: 1200px;
+}
+
+
+ul.paging li:nth-child(2):hover #pagingSpan {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+}
+
+#pagingSpan {
+    display: none; 
+    background: #bacabf;
+    color: #001e09;
+    margin: 5px 0 0 25px;
+    padding: 0 5px;
+    position: absolute;
+    z-index: 1000;
+    width:130px;
+    height:30px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+#preDiv {
+  background-color: #001e09;
+  background-image: url('../images/line.png');
+  width: 60%;
+  max-width: 600px;
+  padding: 30px 10px 20px 10px;
+  margin: 50px auto;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  border: 1px solid white;
+  outline: 40px solid #001e09;
+  opacity: 1;
+  cursor: pointer;
+  position: relative;;
+  animation: move 1s ease;
+}
+
+@keyframes move {
+from {top: -600px;}
+50% {top: 50px;}
+to {top: 0px;}
+}
+
+
+#preDiv h1 {
+  font: bold 14vw/16vw 'Exo', sans-serif;
+  margin: 20px 0;
+  letter-spacing: 0;
+  background: none;
+}
+
+
+#preDiv h4 {
+  font: normal 3vw/5vw 'Source Sans Pro', sans-serif;
+  letter-spacing: 1vw;
+  color: #45644f;
+  margin: 10px 0;
+
+}
+
+
+/* Change Autocomplete styles in Chrome*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  background-image: url('../images/loop.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: #001e09;
+}
+
+@media (min-width: 768px) {
+#preDiv h1 {
+  font: bold 80px/100px 'Exo', sans-serif;
+}
+#preDiv h4 {
+  font: normal 24px/30px 'Source Sans Pro', sans-serif;
+  letter-spacing: 5px;
+
+}
+}
+
+@media (min-width: 420px) {
+  h1 {
+    font: bold 25px/30px 'Exo', sans-serif;
+  }
+
+  input {
+    font: normal 15px/20px 'Source Sans Pro', sans-serif;
+  }
+  input:hover,
+  input:focus {
+    font: normal 15px/20px 'Source Sans Pro', sans-serif;
+  }
+  h2>a {
+    font: bold 18px/22px 'Source Sans Pro', sans-serif;
+  }
+  h3 {
+    font: normal 16px/18px 'Source Sans Pro', sans-serif;
+  }
+  .boxDescr {
+    font: normal 14px/16px 'Source Sans Pro', sans-serif;
+  }
+  .boxData {
+    font: normal 12px/14px 'Source Sans Pro', sans-serif;
+  }
+  ul.boxStat li {
+    font: normal 12px/14px 'Source Sans Pro', sans-serif;
+  }
+  #stringSearch {
+    font: normal 15px/18px 'Source Sans Pro', sans-serif;
+  }
+}
